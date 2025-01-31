@@ -14,14 +14,16 @@ operator(min)
 -min(x,min(y,z)) = min(min(x,y),z) จะได้ ค่าเดิมเสมอแม้ว่าลำดับจะเปลี่ยน
 
 2.Carrier: Set of Sets
-Operator: ∩ (Set Intersection)
--Identity ของ ∩ คือ Universal Set (U) เพราะ x ∩ U = x เสมอ
--x ∩ (y ∩ z) = (x ∩ y) ∩ z  จะได้ค่าเดิมเสมอแม้ว่าลำดับจะเปลี่ยน
+Operator: intersection (Set Intersection)
+-Identity ของ intersection คือ Universal Set (U) เพราะ x intersection U = x เสมอ
+-x intersection (y intersection z) = (x intersection y) intersection z  จะได้ค่าเดิมเสมอแม้ว่าลำดับจะเปลี่ยน
 
-3. Carrier: Set of Boolean Expressions
-Operator: ∨ (Logical OR)
--Identity ของ ∨ คือ False เพราะ x ∨ False = x เสมอ
-- x ∨ (y ∨ z) = (x ∨ y) ∨ z จะได้ค่าเดิมเสมอแม้ว่าลำดับจะเปลี่ยน
+3. Carrier: (a -> a)
+Operator: (.) (Function Composition)
+-Identity ของ Function Composition คือ id 
+f . id = f    Right identity
+id . f = f    Left identity
+-(f . g) . h = f . (g . h) จะได้ ค่าเดิมเสมอแม้ว่าลำดับจะเปลี่ยน
  -}
 
 {-
